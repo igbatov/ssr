@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router'
 import './app.scss';
 
-export default class App extends Component {
+export default class About extends Component {
     render() {
         return (
             <div className="app">
-                <h1 className="app-heading">Hello World</h1>
+                <h1 className="app-heading">About</h1>
                 <ul role="nav">
-                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/">Home</Link></li>
                 </ul>
             </div>
         );
