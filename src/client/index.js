@@ -5,7 +5,7 @@ import routes from '../components/app/routes'
 import App from "../components/app/App";
 import About from "../components/app/About";
 
-ReactDOM.render(
+ReactDOM.hydrate(
     <Router routes={routes} history={browserHistory} />,
     document.getElementById('app')
 );

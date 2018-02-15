@@ -24,6 +24,8 @@ const outputErrors = (err, stats) => {
 };
 console.log('Initializing server application...');
 const exp = express();
+// to serve scripts like dist/client.js
+exp.use(express.static(__dirname));
 console.log('Compiling bundle...');
 const serverCompiler = webpack(serverConfig);
 serverCompiler.outputFileSystem = fs;
